@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="puzzle">
+
+        <div class="face" id="frontFace">
+            <!-- dials (buttons) -->
+            <button id="bulm" style="grid-column: 1; grid-row: 2">↓</button>
+            <button id="bulp" style="grid-column: 2; grid-row: 1">→</button>
+            <button id="burm" style="grid-column: 6; grid-row: 1">←</button>
+            <button id="burp" style="grid-column: 7; grid-row: 2">↓</button>
+            <button id="bdrm" style="grid-column: 7; grid-row: 6">↑</button>
+            <button id="bdrp" style="grid-column: 6; grid-row: 7">←</button>
+            <button id="bdlm" style="grid-column: 2; grid-row: 7">→</button>
+            <button id="bdlp" style="grid-column: 1; grid-row: 6">↑</button>
+
+            <!-- corner clocks -->
+            <div id="cul" class="clock" style="grid-column: 2; grid-row: 2">12</div>
+            <div id="cur" class="clock" style="grid-column: 6; grid-row: 2">12</div>
+            <div id="cdr" class="clock" style="grid-column: 6; grid-row: 6">12</div>
+            <div id="cdl" class="clock" style="grid-column: 2; grid-row: 6">12</div>
+
+            <!-- edge/center clocks -->
+            <div id="cu" class="clock" style="grid-column: 4; grid-row: 2">12</div>
+            <div id="cr" class="clock" style="grid-column: 6; grid-row: 4">12</div>
+            <div id="cd" class="clock" style="grid-column: 4; grid-row: 6">12</div>
+            <div id="cl" class="clock" style="grid-column: 2; grid-row: 4">12</div>
+            <div id="cc" class="clock" style="grid-column: 4; grid-row: 4">12</div>
+
+            <!-- pins -->
+            <input type="checkbox" id="pul" style="grid-column: 3; grid-row: 3">
+            <input type="checkbox" id="pur" style="grid-column: 5; grid-row: 3">
+            <input type="checkbox" id="pdr" style="grid-column: 5; grid-row: 5">
+            <input type="checkbox" id="pdl" style="grid-column: 3; grid-row: 5">
+
+        </div>
+
+        <div class="face" id="backFace">
+            <!-- dials (buttons) -->
+            <button id="bburp" style="grid-column: 1; grid-row: 2">↓</button>
+            <button id="bburm" style="grid-column: 2; grid-row: 1">→</button>
+            <button id="bbulp" style="grid-column: 6; grid-row: 1">←</button>
+            <button id="bbulm" style="grid-column: 7; grid-row: 2">↓</button>
+            <button id="bbdlp" style="grid-column: 7; grid-row: 6">↑</button>
+            <button id="bbdlm" style="grid-column: 6; grid-row: 7">←</button>
+            <button id="bbdrp" style="grid-column: 2; grid-row: 7">→</button>
+            <button id="bbdrm" style="grid-column: 1; grid-row: 6">↑</button>
+
+            <!-- corner clocks -->
+            <div id="bcur" class="clock" style="grid-column: 2; grid-row: 2">12</div>
+            <div id="bcul" class="clock" style="grid-column: 6; grid-row: 2">12</div>
+            <div id="bcdl" class="clock" style="grid-column: 6; grid-row: 6">12</div>
+            <div id="bcdr" class="clock" style="grid-column: 2; grid-row: 6">12</div>
+
+            <!-- edge/center clocks -->
+            <div id="bcu" class="clock" style="grid-column: 4; grid-row: 2">12</div>
+            <div id="bcl" class="clock" style="grid-column: 6; grid-row: 4">12</div>
+            <div id="bcd" class="clock" style="grid-column: 4; grid-row: 6">12</div>
+            <div id="bcr" class="clock" style="grid-column: 2; grid-row: 4">12</div>
+            <div id="bcc" class="clock" style="grid-column: 4; grid-row: 4">12</div>
+
+            <!-- pins -->
+            <input type="checkbox" id="bpur" style="grid-column: 3; grid-row: 3">
+            <input type="checkbox" id="bpul" style="grid-column: 5; grid-row: 3">
+            <input type="checkbox" id="bpdl" style="grid-column: 5; grid-row: 5">
+            <input type="checkbox" id="bpdr" style="grid-column: 3; grid-row: 5">
+        </div>
+
+    </div>
+
+    <button id="scrambleButton" class="feature-button">Scramble</button>
+    <button id="solveButton" class="feature-button">Solve</button>
+<!-- 
+    <br>
+
+    <input type="text" id="cmdInput"> gotta get this on a new line-->
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
